@@ -1,5 +1,11 @@
 def to_roman(num)
-  # Your code here
+    if num < 4
+        return "I" * num
+    elsif num == 4
+        return "IV"
+    elsif num >= 5
+        return "V" + ("I" * (num-5))
+    end
 end
 
 # Drive code... this should print out trues.
